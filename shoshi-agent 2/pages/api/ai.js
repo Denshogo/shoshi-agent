@@ -1,6 +1,6 @@
 import { callAI, SCHED_SYS, DAILY_SYS, KANZAKI_SYS, ICHIJO_SYS, ALL, MINOR } from '../../lib/agents'
 import { supabase } from '../../lib/supabase'
-import { PLANS } from '../../lib/stripe'
+import { PLANS } from '../../lib/plans'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end()

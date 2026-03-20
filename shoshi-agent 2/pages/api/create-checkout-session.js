@@ -1,4 +1,5 @@
-import { stripe, PLANS } from '../../lib/stripe'
+import { stripe } from '../../lib/stripe'
+import { PLANS } from '../../lib/plans'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end()
